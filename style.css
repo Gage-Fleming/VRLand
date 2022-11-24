@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-/* Override web browser default styles  */
+/* Override web browser default styles  || General styles */
 * {
     font-family: 'Roboto', 'Poppins', helvetica, sans-serif;
     margin: 0;
@@ -16,9 +16,22 @@ a, a:visited, a:hover, a:active{
     color: inherit;
 }
 
-/* Style header and elements within header  */
+h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
 
-/* Style header element turning it into a flex object. Also adjust the padding and sizing. */
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Style header element turning it into a flex object. Also adjust the padding and sizing. || Header */
 header {
     height: auto;
     width: 100%;
@@ -29,7 +42,7 @@ header {
     align-items: center;
 }
 
-/* Set default styles for all nav tags. Make them a flex item and remove any default list styling*/
+/* Set default styles for all nav tags. Make them a flex item and remove any default list styling  || nav */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -46,44 +59,10 @@ nav ul li {
     color: #05C3F9;
 }
 
-/* Style large-image class to contain main image piece on each page */
-.large-image {
-    height: 100vh;
-    width: 100%;
-    background-image: url(./images/colossal-reality-coaster.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-/* The main cta section of the intro image. */
-.main-ctoa {
-    height: auto;
-    width: 50%;
-    padding: 30px 60px;
-    background-color: #05c4f99c;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/* || General classes */
 
-.main-ctoa h2 {
-    font-size: 64px;
-    font-weight: 800;
-}
-
-.main-ctoa p{
-    font-size: 32px;
-    font-weight: 600;
-    padding: 20px 0;
-}
-
+/* This is to style links that mimic buttons with a black background and blue text */
 .black-blue-link {
     height: auto;
     width: auto;
@@ -97,30 +76,64 @@ nav ul li {
     border: none;
 }
 
+/* || Landing Page */
 
-/* large image section here  */
+/* Style large-image class to contain main image piece on each page || large-image*/
+.lp-large-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/colossal-reality-coaster.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The main cta section of the intro image. */
+.lp-main-ctoa {
+    height: auto;
+    width: 50%;
+    padding: 30px 60px;
+    background-color: #05c4f99c;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lp-main-ctoa p {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0;
+}
 
 /* introduction section here  */
-.introductionSection{
+.lp-introduction{
     height: auto;
     width: 100%;
     padding: 50px 40px;
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(235, 234, 234);
 }
-#introduction-right{
+#lp-introduction-right{
     width: 50%;
 }
-#introduction-left{
+
+#lp-introduction-left{
     width: 50%;
 }
-#introduction-right img{
+
+#lp-introduction-right img{
     width: 100%;
     border-radius: 15px;
 }
-/* introduction section here  */
 
 
 /* two column section here  */
@@ -218,9 +231,4 @@ footer button{
     background-color: rgb(87, 87, 87);
     color: #fff;
     text-align: center;
-}
-/* footer section here  */
-
-.hamburger-icon {
-    color: #05C3F9;
 }
