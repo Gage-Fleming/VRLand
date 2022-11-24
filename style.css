@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-a , a:visited{
+a, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;
 }
@@ -29,7 +29,7 @@ header {
     align-items: center;
 }
 
-/* Style right container of header. Including the nav and hamburger menu. Remove the default list styles.*/
+/* Set default styles for all nav tags. Make them a flex item and remove any default list styling*/
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -46,19 +46,11 @@ nav ul li {
     color: #05C3F9;
 }
 
-nav a {
-    color: #05C3F9 !important;
-}
-
-nav a:visited {
-    color: #05C3F9 !important;
-}
-
-/* large image section here  */
-.large-image{
+/* Style large-image class to contain main image piece on each page */
+.large-image {
     height: 100vh;
     width: 100%;
-    background-image: url(./img/large-image.png);
+    background-image: url(./images/colossal-reality-coaster.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -67,11 +59,13 @@ nav a:visited {
     justify-content: center;
 }
 
-.main-ctoa{
-    height: 410px;
-    width: 800px;
-    background-color: rgba(0, 0, 0, 0.425);
-    color: #fff;
+/* The main cta section of the intro image. */
+.main-ctoa {
+    height: auto;
+    width: 50%;
+    padding: 30px 60px;
+    background-color: #05c4f99c;
+    color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -79,15 +73,25 @@ nav a:visited {
     justify-content: center;
 }
 
+.main-ctoa h2 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
 .main-ctoa p{
+    font-size: 32px;
+    font-weight: 600;
     padding: 20px 0;
 }
 
-.black-blue-button {
+.black-blue-link {
     height: auto;
-    width: 200px;
-    padding: 5px 10px;
-    color: #fff;
+    width: auto;
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #05C3F9 !important;
+    border-radius: 12px;
     background-color: #000;
     cursor: pointer;
     border: none;
