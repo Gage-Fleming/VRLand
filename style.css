@@ -1,43 +1,58 @@
-/* font here  */
+/* Import google font Poppins and Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-/* reset code here  */
-*{
+/* Override web browser default styles  */
+* {
+    font-family: 'Roboto', 'Poppins', helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-a{
+
+a , a:visited{
     text-decoration: none;
+    color: inherit;
 }
 
+/* Style header and elements within header  */
 
-/* header section here  */
-header{
+/* Style header element turning it into a flex object. Also adjust the padding and sizing. */
+header {
     height: auto;
     width: 100%;
     padding: 20px 30px;
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.headerRight ul{
+/* Style right container of header. Including the nav and hamburger menu. Remove the default list styles.*/
+nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     align-items: center;
-    font-size: 25px;
-    color: #fff !important;
+    font-size: 32px;
+    font-weight: 400;
+    color: #05C3F9 !important;
 }
 
-.headerRight ul li{
-    padding-left: 30px;
-    color: #fff !important;
+/* Style the list inside the navbar */
+nav ul li {
+    margin: 0px 40px;
+    color: #05C3F9;
 }
-/* header section here  */
+
+nav a {
+    color: #05C3F9 !important;
+}
+
+nav a:visited {
+    color: #05C3F9 !important;
+}
 
 /* large image section here  */
 .large-image{
@@ -67,7 +82,8 @@ header{
 .main-ctoa p{
     padding: 20px 0;
 }
-button{
+
+.black-blue-button {
     height: auto;
     width: 200px;
     padding: 5px 10px;
