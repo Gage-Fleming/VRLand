@@ -39,6 +39,7 @@ h3 {
 
 p {
     font-size: 1.5vw;
+    text-align: center;
 }
 
 img {
@@ -48,11 +49,12 @@ img {
 }
 
 /* Style header element turning it into a flex object. Also adjust the padding and sizing. || Header */
-header {
+header, footer{
     height: auto;
     width: 100%;
     padding: 20px 30px;
     background-color: rgb(0, 0, 0);
+    color: #05C3F9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,14 +109,15 @@ nav ul li {
     width: 100%;
     padding: 0px;
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .two-column > * {
     width: 50%;
+    height: 100%;
     padding: 50px 40px;
+    flex: auto;
 }
 
 #header-left{
@@ -225,25 +228,31 @@ nav ul li {
     margin-right: 25px;
 }
 
-.new-two-column {
-    height: auto;
-    width: 100%;
+#lp-gift-shop {
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
-.newColumn {
-    width: 50%;
+
+#lp-gift-shop * {
+    margin: 10px 0px;
+}
+
+#lp-gift-shop h3 {
+    color: #05C3F9;
+}
+
+#toys-image {
+    width: fill;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* footer section here  */
+
 footer {
-    height: auto;
-    width: 100%;
-    padding: 50px 40px;
-    background-color: rgb(87, 87, 87);
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
