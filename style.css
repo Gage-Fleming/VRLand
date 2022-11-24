@@ -72,18 +72,27 @@ nav ul li {
 
 /* || General classes */
 
-/* This is to style links that mimic buttons with a black background and blue text */
-.black-blue-link {
+/* Add styling to links to mimic a button */
+.button-link {
     height: auto;
-    width: auto;
+    width: fit-content;
     padding: 15px 40px;
     font-size: 24px;
     font-weight: 500;
-    color: #05C3F9 !important;
     border-radius: 12px;
-    background-color: #000;
     cursor: pointer;
     border: none;
+}
+
+/* This is to style links that mimic buttons with a black background and blue text */
+.black-blue-link {
+    color: #05C3F9 !important;
+    background-color: #000;
+}
+
+.blue-white-link {
+    color: white !important;
+    background-color: #05C3F9;
 }
 
 /* || Landing Page */
@@ -134,6 +143,10 @@ nav ul li {
 #lp-introduction-left{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #lp-vrland-introduction {
