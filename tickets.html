@@ -14,7 +14,7 @@
         <header>
             <!-- Add logo to left side of header -->
             <div id="header-left">
-                <object data="./images/logo-no-background.png" type=""></object>
+                <object data="./images/logo-no-background.png" type="image/png"></object>
             </div>
 
             <!-- Add navbar to right side of header -->
@@ -23,7 +23,7 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./attractions.html">Attractions</a></li>
-                        <li><a href="# "><object data="./icons/bars-solid.svg" width="30" type=""></object></a></li>
+                        <li><a href="# "><object data="./icons/bars-solid.svg" width="30" type="image/svg+xml"></object></a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,60 +37,63 @@
             </div>
         </div>
 
-        <!-- ticket section here  -->
-        <div class="ticketSection">
-            <div class="ticketLeft">
-                <div class="ticketLeftInner">
-                    <div class="innetLeft">
-                        <object data="./icons/ticket-icon.svg">Tickets icon</object>
+        <!-- Two column section to hold cta's to purchase our two most bought admission options.  -->
+        <div class="two-column">
+            <!-- Day pass ticket section -->
+            <div class="ticket" id="day-pass-ticket">
+                <div class="ticket-top">
+                    <div class="ticket-top-logo">
+                        <object data="./icons/ticket-icon.svg" type="image/svg+xml" width="300">Tickets icon</object>
                     </div>
-                    <div class="innetRight">
-                        <h1>Day Pass Tickets</h1>
+                    <section class="ticket-top-info">
+                        <h2>Day Pass Tickets</h2>
                         <p>Enjoy VRLand for a full family fun packed day. </p>
-                    </div>
+                    </section>
                 </div>
+                <hr>
                 <ul>
-                    <li><p>Kids (Age 5-12) $24 + GST</p><button>BUY</button></li>
-                    <li><p>Teens (Age 13-18) $56 + GST.</p><button>BUY</button></li>
-                    <li><p>Adults $99 + GST.</p><button>BUY</button></li>
+                    <li><p>Kids (Age 5-12) $24 + GST</p><a href="#" class="blue-white-link button-link">BUY</a></li>
+                    <li><p>Teens (Age 13-18) $56 + GST.</p><a href="#" class="blue-white-link button-link">BUY</a></li>
+                    <li><p>Adults $99 + GST.</p><a href="#" class="blue-white-link button-link">BUY</a></li>
                 </ul>
             </div>
-            <div class="ticketRight">
-                <div class="ticketLeftInner">
-                    <div class="innetLeft">
-                        <img src="https://via.placeholder.com/300x300.jpg" alt="">
+
+            <!-- Fast track ticket section -->
+            <div class="ticket" id="fast-track-ticket">
+                <div class="ticket-top">
+                    <div class="ticket-top-logo">
+                        <object data="./icons/fast-track-ticket-icon.svg" type="image/svg+xml" width="300">Fast-Track Tickets icon</object>
                     </div>
-                    <div class="innetRight">
-                        <h1>Fast Track Tickets.</h1>
+                    <section class="ticket-top-info">
+                        <h2>Fast Track Tickets</h2>
                         <p>Skip the lines for the day with fast track tickets!</p>
-                    </div>
+                    </section>
                 </div>
+                <hr>
                 <ul>
-                    <li><p>Kids (Age 5-12) $36 + GST</p><button>BUY</button></li>
-                    <li><p>Teens (Age 13-18) $67 + GST.</p><button>BUY</button></li>
-                    <li><p>Adults $132 + GST</p><button>BUY</button></li>
+                    <li><p>Kids (Age 5-12) $36 + GST</p><a href="#" class="black-blue-link button-link">BUY</a></li>
+                    <li><p>Teens (Age 13-18) $67 + GST.</p><a href="#" class="black-blue-link button-link">BUY</a></li>
+                    <li><p>Adults $132 + GST</p><a href="#" class="black-blue-link button-link">BUY</a></li>
                 </ul>
             </div>
         </div>
-        <!-- ticket section here  -->
 
-        <!-- ticket purchase section one  -->
-        <div class="ticketOne">
-            <div class="ticketOneleft">
-                <div class="ticketOneInner">
-                    <div class="oneLeft">
-                        <img src="https://via.placeholder.com/350x300" alt="">
+        <!-- Youth camp tickets section. Holds a cta over a large cover image-->
+        <div class="large-image" id="youth-camp-image">
+            <div class="ticket" id="youth-camp-ticket">
+                <div class="ticket-top">
+                    <div class="ticket-top-logo">
+                        <object data="./icons/kid-icon.svg" type="image/svg+xml" width="300">Youth camp icon</object>
                     </div>
-                    <div class="oneRight">
-                        <h1>Youth-Camp Tickets</h1>
+                    <div class="ticket-top-info">
+                        <h2>Youth-Camp Tickets</h2>
                         <p>Help your child unlock new skills with our youth VR boot-camp. They will learn the ins and outs of VR!</p>
                     </div>
                 </div>
-                <div class="ticket-purchase">
-                    <ul>
-                        <li><h4>Kids (Age 5-12) $78 + GST</h4><button>BUY</button></li>
-                    </ul>
-                </div>
+                <hr>
+                <ul>
+                    <li><p>Kids (Age 5-12) $78 + GST</p><a href="#" class="white-black-link button-link">BUY</a></li>
+                </ul>
             </div>
             <div class="ticketOneRight"></div>
         </div>

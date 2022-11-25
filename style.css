@@ -58,6 +58,10 @@ object {
     pointer-events: none;
 }
 
+hr {
+    margin: 10px 0px;
+}
+
 /* Style header element turning it into a flex object. Also adjust the padding and sizing. || Header */
 header, footer{
     height: auto;
@@ -157,6 +161,11 @@ nav ul li {
 .blue-white-link {
     color: white !important;
     background-color: #05C3F9;
+}
+
+.white-black-link {
+    color: black !important;
+    background-color: white;
 }
 
 /* Style class to allow for easy two-column layout */
@@ -366,56 +375,91 @@ nav ul li {
 }
 
 /* Tickets Page || Tickets section */
-.ticketSection{
-    height: auto;
-    width: 100%;
+
+.ticket-top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.ticketLeft{
-    padding: 50px 20px 50px 40px ;
-    background-color: black;
-    color: white;
-}
-.ticketRight{
-    padding: 50px 20px 50px 40px ;
-    background-color: rgb(255, 255, 255);
-}
-.ticketRight .ticketLeftInner p{
-    color: #000;
+.ticket-top *{
+    text-align: left;
 }
 
-.ticketLeftInner{
+.ticket h2 {
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.ticket ul {
+    list-style: none;
+}
+
+li a {
+    font-size: 1vw !important;
+    padding: 10px 50px !important;
+}
+
+.ticket ul  li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.ticketLeftInner p{
-    color: #fff;
-}
-
-.ticketLeftInner img{
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.ticketLeft ul {
-    list-style: none;
-}
-.ticketLeft ul  li{
-    display: flex;
-    justify-content: space-between;
     padding: 10px 0;
-    color: #fff;
 }
 
-.ticketRight ul {
-    list-style: none;
+.ticket-top-info {
+    margin-left: 30px
 }
-.ticketRight ul  li{
+
+#day-pass-ticket {
+    background-color: black;
+    color: white;
+}
+
+#day-pass-ticket h2 {
+    color: #05C3F9;
+}
+
+#day-pass-ticket hr {
+    color: #05C3F9;
+}
+
+#fast-track-ticket {
+    background-color: rgb(255, 255, 255);
+    color: #05C3F9;
+}
+
+#fast-track-ticket h2 {
+    color: black;
+}
+
+#fast-track-ticket hr {
+    color: black;
+}
+
+/* Tickets page || Youth camp section */
+
+#youth-camp-image {
+    background-image: url(./images/child-vr.jpg);
     display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#youth-camp-ticket {
+    width: 50%;
+    background-color: #05c4f99c;
+    color: white;
+    height: auto;
+    padding: 50px 40px;
+    margin-left: 100px;
+}
+
+#youth-camp-ticket p {
+    color: black;
+}
+
+#youth-camp-ticket hr {
+    color: white;
 }
