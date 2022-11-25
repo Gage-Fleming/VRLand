@@ -491,3 +491,9 @@ nav ul li {
 #seasons-pass-ticket hr {
     color: #05C3F9;
 }
+
+/* || Attractions Page */
+
+#att-large-image {
+    background-image: url(../images/things-to-do-main-image.jpg);
+}
