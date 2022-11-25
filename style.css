@@ -249,50 +249,5 @@ nav ul li {
     object-fit: cover;
 }
 
-/* footer section here  */
+/* || Footer section  */
 
-footer {
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-left h4 {
-    text-align: center;
-    color: #fff;
-    font-size: 22px;
-    padding-bottom: 15px;
-}
-
-footer input {
-    width: 250px;
-    padding: 3px 5px;
-    outline: none;
-}
-
-footer button {
-    width: 150px;
-}
-
-.footer-right ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-right ul li {
-    padding-left: 20px ;
-    color: #fff;
-    font-size: 22px;
-}
-.follow {
-    float: right;
-}
-
-.follow ul {
-    justify-content: center;
-}
-.copy {
-    background-color: rgb(87, 87, 87);
-    color: #fff;
-    text-align: center;
-}

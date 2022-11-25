@@ -100,29 +100,39 @@
 
     <!-- footer section here  -->
     <footer class="two-column">
-        <div class="footer-left">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <input type="text" placeholder="Enter Your mail Address"> <button>ENTER</button>
-        </div>
-        <div class="footer-right">
-            <nav>
-                <ul>
-                    <li><a href="./tickets/index.html">Tickets</a></li>
-                    <li><a href="#">Attractions</a></li>
-                    <li><a href="#">Follow us</a></li>
-                </ul>
+        <!--Create mailing list form-->
+		<div class="two-column">
+			<section class="mail-form">
+				<h4>Join our mailing list</h4>
+				<form action="#" method="post">
+					<ul>
+						<li>
+							<input type="email" id="mail" name="user_email" placeholder="Enter your email address">
+						</li>
+						<li class="button">
+							<button type="submit">ENTER</button>
+						</li>
+					</ul>
+				</form>
+			</section>
 
-                <div class="follow">
-                    <ul>
-                        <a href="#"><li><img src="./img/instagram.svg" width="40px" alt=""></li></a>
-                        <a href="#"><li><img src="./img/twitter.svg" width="40px" alt=""></li></a>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="copy">
-            <p>© VRLand, All Rights Reserved</p>
-        </div>
+			<!--Create footer nav bar with links to social media-->
+			<nav>
+				<ul>
+					<li><a href="#">Tickets</a></li>
+					<li><a href="#">Attractions</a></li>
+					<li>
+						<p>Follow us</p>
+						<a href="https://www.instagram.com"><img src="./icons/instagram.svg" width="50"></a>
+						<a href="https://twitter.com"><img src="./icons/twitter.svg" width="50"></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!--Create copyright notice-->
+		<p>© VRLand, All Rights Reserved</p>
+	</footer>
     </footer>
     
     <!-- footer section here  -->
