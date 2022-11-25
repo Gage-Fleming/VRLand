@@ -97,6 +97,45 @@ nav ul li {
 
 /* || General classes */
 
+/* Style large-image class to contain main image piece on each page*/
+.large-image {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the main call to action/catchphrase that is laid out over introduction image */
+.main-ctoa {
+    height: auto;
+    width: 50%;
+    padding: 30px 60px;
+    background-color: #05c4f99c;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-ctoa p {
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+/* Add styling to pages not index.html to change font colour to white and spread blue background further */
+.secondary-ctoa {
+    color: white;
+    width: 75%;
+    padding: 60px;
+}
+
 /* Add styling to links to mimic a button */
 .button-link {
     height: auto;
@@ -137,9 +176,9 @@ nav ul li {
     padding: 50px 40px;
 }
 
+/* || Header section */
 #header-left{
     width: 150px;
-    flex-shrink: 1;
 }
 
 #header-left object{
@@ -147,42 +186,77 @@ nav ul li {
     max-height: 100%;
 }
 
+/* || Footer section  */
+
+#footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-top nav ul{
+    align-items: flex-start !important;
+    justify-content: flex-end !important;
+}
+
+#social-li {
+    margin-right: 0px;
+}
+
+.mail-form {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mail-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.mail-form input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.mail-form button {
+    margin-left: 20px;
+    height: 100%;
+    padding: 5% 20%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+#social-container {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-container a {
+    width: 30%;
+    height: auto;
+}
+
+#social-container object{
+    width: 100%;
+    max-height: 100%;
+}
+
 /* || Landing Page */
 
-/* Style large-image class to contain main image piece on each page*/
-.lp-large-image {
-    height: 100vh;
-    width: 100%;
+#lp-large-image {
     background-image: url(./images/colossal-reality-coaster.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.lp-main-ctoa {
-    height: auto;
-    width: 50%;
-    padding: 30px 60px;
-    background-color: #05c4f99c;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.lp-main-ctoa p {
-    font-size: 2vw;
-    font-weight: 600;
-    padding: 20px 0;
-}
-
-
-/* || Introduction section */
+/* Landing Page || Introduction section */
 .lp-introduction {
     background-color: black;
     color: white;
@@ -206,7 +280,7 @@ nav ul li {
     padding-left: 30px;
 }
 
-/* || Ending section */
+/* Landing Page || Ending section */
 
 #lp-attraction-highlight {
     background-color: #05C3F9;
@@ -286,66 +360,62 @@ nav ul li {
     object-fit: cover;
 }
 
-/* || Footer section  */
-
-#footer-top {
-    display: flex;
-    justify-content: space-between;
+/* || Tickets Page */
+#tic-large-image {
+    background-image: url(./images/ticket-booth.jpg);
 }
 
-#footer-top nav ul{
-    align-items: flex-start !important;
-    justify-content: flex-end !important;
-}
-
-#social-li {
-    margin-right: 0px;
-}
-
-.mail-form {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.mail-form ul {
-    list-style-type: none;
-    display: flex;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
-.mail-form input {
-    width: 100%;
-    padding: 12px;
-    padding-right: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
-
-.mail-form button {
-    margin-left: 20px;
-    height: 100%;
-    padding: 5% 20%;
-    font-size: 1.5vw;
-    font-weight: 600;
-    border-radius: 6px;
-}
-
-#social-container {
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#social-container a {
-    width: 30%;
+/* Tickets Page || Tickets section */
+.ticketSection{
     height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#social-container object{
-    width: 100%;
-    max-height: 100%;
+.ticketLeft{
+    padding: 50px 20px 50px 40px ;
+    background-color: black;
+    color: white;
+}
+.ticketRight{
+    padding: 50px 20px 50px 40px ;
+    background-color: rgb(255, 255, 255);
+}
+.ticketRight .ticketLeftInner p{
+    color: #000;
+}
+
+.ticketLeftInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticketLeftInner p{
+    color: #fff;
+}
+
+.ticketLeftInner img{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ticketLeft ul {
+    list-style: none;
+}
+.ticketLeft ul  li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.ticketRight ul {
+    list-style: none;
+}
+.ticketRight ul  li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
 }
