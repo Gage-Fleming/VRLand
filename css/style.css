@@ -267,7 +267,7 @@ nav ul li {
 /* || Landing Page */
 
 #lp-large-image {
-    background-image: url(./images/colossal-reality-coaster.jpg);
+    background-image: url(../images/colossal-reality-coaster.jpg);
 }
 
 /* Landing Page || Introduction section */
@@ -376,7 +376,7 @@ nav ul li {
 
 /* || Tickets Page */
 #tic-large-image {
-    background-image: url(./images/ticket-booth.jpg);
+    background-image: url(../images/ticket-booth.jpg);
 }
 
 /* Tickets Page || Tickets section */
@@ -446,7 +446,7 @@ nav ul li {
 /* Tickets page || Youth camp section */
 
 #youth-camp-image {
-    background-image: url(./images/child-vr.jpg);
+    background-image: url(../images/child-vr.jpg);
     display: flex;
     justify-content: center;
     align-items: flex-start;
