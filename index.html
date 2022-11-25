@@ -1,145 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Create header tag to assist in metadata for web browser and SEO -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VRLand</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<!-- Create header tag to assist in metadata for web browser and SEO -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRLand</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<!-- Create body tag to house content for user -->
-<body>
-    <!-- Create header section to house, logo, nav bar and hamburger menu -->
-    <header>
-        <!-- Add logo to left side of header -->
-        <div id="header-left">
-            <object data="./images/logo-no-background.png" type=""></object>
-        </div>
-
-        <!-- Add navbar to right side of header -->
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li><a href="./tickets.html">Tickets</a></li>
-                    <li><a href="./attractions.html">Attractions</a></li>
-                    <li><a href="# "><object data="./icons/bars-solid.svg" width="30" type=""></object></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- Create large image div to hold introductory image and immediate cta to buy tickets -->
-        <div class="lp-large-image">
-            <div class="lp-main-ctoa">
-                <h1>Experience Infinity</h1>
-                <p>Treat your inner child to infinite universes and experiences on your next vacation.</p>
-                <a href="./tickets.html" class="black-blue-link button-link">BUY TICKETS</a>
+    <!-- Create body tag to house content for user -->
+    <body>
+        <!-- Create header section to house, logo, nav bar and hamburger menu -->
+        <header>
+            <!-- Add logo to left side of header -->
+            <div id="header-left">
+                <object data="./images/logo-no-background.png" type="image/png">VRLand logo</object>
             </div>
-        </div>
 
-        <!-- Create introduction section to hold VRLand elevator pitch and an image of a
-        lady using a VR headset -->
-        <section class="lp-introduction two-column">
-            <div id="lp-introduction-left">
-                <article id="lp-vrland-introduction">
-                    <h2>VRLand brings the things you love to life!</h2>
-                    <p>
-                        VRLand is the new premier destination for dreaming. With a mix of
-                        50+ worlds to explore and experience in a mixed-virtual reality
-                        setting. The whole family will experience the joy of exploring new
-                        worlds, and familiar ones. The worlds don not end when the rides do
-                        either. Eat world inspired cuisine and partake in unique family fun
-                        adventures after experiencing the unique rides only we can offer.
-                        
-                        <br><br>
-
-                        Do not settle for reality any longer. Come explore the worlds we have
-                        built, along with worlds built by familiar names like: Nintendo,
-                        Dreamworks, Microsoft and Sony. Do not let your imagination go
-                        hungry any longer.
-                    </p>
-                </article>
-                <a href="./attractions.html" class="blue-white-link button-link">ATTRACTIONS</a>
-            </div>
-            <div id="lp-introduction-right">
-                <img src="./images/vr-person.jpg" alt="">
-            </div>
-        </section>
-
-        <!-- Create ending section of landing page. Holds a flex box container with information 
-            on the Hyrule attraction and VRGift shop-->
-        <section id="lp-ending" class="two-column">
-            <!-- Hyrule attraction -->
-            <section id="lp-attraction-highlight">
-                <h3>Visit Hyrule in a one of a kind adventure</h3>
-                <div class="two-column">
-                    <img src="./images/hyrule-castle.jpg" width="100%" alt="">
-                    <div id="lp-attraction-right">
-						<div id="hyrule-icons" class="two-columns">
-							<object data="./icons/sword-icon.svg" id="sword"></object>
-							<object data="./icons/heart-icon.svg" id="shield"></object>
-						</div>
-                        <p>Protect Hyrule Castle from the reincarnation of Calamity Ganon in the
-                            all-new mixed-reality coaster. Then enjoy some recipe staples
-                            such as meat pie with characters from the Zelda universe</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="lp-gift-shop">
-                <h3>Bring the fun home with the VRGift Shop</h3>
-                <p>View the hundreds of items, hand-crafted to bring the worlds you visit to life!</p>
-                <img src="./images/toys.jpg" id="toys-image" width="300" alt="">
-                <a href="./tickets/index.html" class="black-blue-link button-link">SHOP HERE</a>
-            </section>
-        </section>
-    </main>
-
-    
-    <footer>
-        <!--Create mailing list form-->
-        <div id="footer-top">
-            <section class="mail-form">
-                <h4>Join our mailing list</h4>
-                <form action="#" method="post">
+            <!-- Add navbar to right side of header -->
+            <div class="header-right">
+                <nav>
                     <ul>
-                        <li>
-                            <input type="email" id="mail" name="user_email" placeholder="Enter your email address">
-                        </li>
-                        <li>
-                            <button type="submit" class="button-link blue-white-link">ENTER</button>
+                        <li><a href="./tickets.html">Tickets</a></li>
+                        <li><a href="./attractions.html">Attractions</a></li>
+                        <li><a href="# "><object data="./icons/bars-solid.svg" width="30" type="image/svg+xml">Hamburger menu</object></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Create large image div to hold introductory image and immediate cta to buy tickets -->
+            <div class="lp-large-image">
+                <div class="lp-main-ctoa">
+                    <h1>Experience Infinity</h1>
+                    <p>Treat your inner child to infinite universes and experiences on your next vacation.</p>
+                    <a href="./tickets.html" class="black-blue-link button-link">BUY TICKETS</a>
+                </div>
+            </div>
+
+            <!-- Create introduction section to hold VRLand elevator pitch and an image of a
+            lady using a VR headset -->
+            <div class="lp-introduction two-column">
+                <div id="lp-introduction-left">
+                    <article id="lp-vrland-introduction">
+                        <h2>VRLand brings the things you love to life!</h2>
+                        <p>
+                            VRLand is the new premier destination for dreaming. With a mix of
+                            50+ worlds to explore and experience in a mixed-virtual reality
+                            setting. The whole family will experience the joy of exploring new
+                            worlds, and familiar ones. The worlds don not end when the rides do
+                            either. Eat world inspired cuisine and partake in unique family fun
+                            adventures after experiencing the unique rides only we can offer.
+                            
+                            <br><br>
+
+                            Do not settle for reality any longer. Come explore the worlds we have
+                            built, along with worlds built by familiar names like: Nintendo,
+                            Dreamworks, Microsoft and Sony. Do not let your imagination go
+                            hungry any longer.
+                        </p>
+                    </article>
+                    <a href="./attractions.html" class="blue-white-link button-link">ATTRACTIONS</a>
+                </div>
+                <div id="lp-introduction-right">
+                    <img src="./images/vr-person.jpg" alt="A young female enjoying the use of a VR headset">
+                </div>
+            </div>
+
+            <!-- Create ending section of landing page. Holds a flex box container with information 
+                on the Hyrule attraction and VRGift shop-->
+            <div id="lp-ending" class="two-column">
+                <!-- Hyrule attraction -->
+                <section id="lp-attraction-highlight">
+                    <h3>Visit Hyrule in a one of a kind adventure</h3>
+                    <div class="two-column">
+                        <img src="./images/hyrule-castle.jpg" alt="A bridge leading up to a castle, covered in smog">
+                        <div id="lp-attraction-right">
+                            <div id="hyrule-icons" class="two-columns">
+                                <object data="./icons/sword-icon.svg" id="sword" type="image/svg+xml">Sword icon</object>
+                                <object data="./icons/heart-icon.svg" id="shield" type="image/svg+xml">Shield icon</object>
+                            </div>
+                            <p>Protect Hyrule Castle from the reincarnation of Calamity Ganon in the
+                                all-new mixed-reality coaster. Then enjoy some recipe staples
+                                such as meat pie with characters from the Zelda universe</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="lp-gift-shop">
+                    <h3>Bring the fun home with the VRGift Shop</h3>
+                    <p>View the hundreds of items, hand-crafted to bring the worlds you visit to life!</p>
+                    <img src="./images/toys.jpg" id="toys-image" width="300" alt="A collection of several toys">
+                    <a href="./tickets/index.html" class="black-blue-link button-link">SHOP HERE</a>
+                </section>
+            </div>
+        </main>
+
+        
+        <footer>
+            <!--Create mailing list form-->
+            <div id="footer-top">
+                <section class="mail-form">
+                    <h4>Join our mailing list</h4>
+                    <form action="#" method="post">
+                        <ul>
+                            <li>
+                                <input type="email" id="mail" name="user_email" placeholder="Enter your email address">
+                            </li>
+                            <li>
+                                <button type="submit" class="button-link blue-white-link">ENTER</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+
+                <!--Create footer nav bar with links to social media-->
+                <nav>
+                    <ul>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Attractions</a></li>
+                        <li id="social-li">
+                            <p>Follow us</p>
+                            <div id="social-container">
+                                <a href="https://www.instagram.com"><object data="./icons/instagram.svg" type="image/svg+xml">Instagram logo</object></a>
+                                <a href="https://twitter.com"><object data="./icons/twitter.svg" type="image/svg+xml">Twitter logo</object></a>
+                            </div>
                         </li>
                     </ul>
-                </form>
-            </section>
+                </nav>
+            </div>
 
-            <!--Create footer nav bar with links to social media-->
-            <nav>
-                <ul>
-                    <li><a href="#">Tickets</a></li>
-                    <li><a href="#">Attractions</a></li>
-                    <li id="social-li">
-                        <p>Follow us</p>
-                        <div id="social-container">
-                            <a href="https://www.instagram.com"><object data="./icons/instagram.svg"></object></a>
-                            <a href="https://twitter.com"><object data="./icons/twitter.svg"></object></a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-		<!--Create copyright notice-->
-		<p>© VRLand, All Rights Reserved</p>
-	</footer>
-    </footer>
-    
-    <!-- footer section here  -->
-
-</body>
-
+            <!--Create copyright notice-->
+            <p>© VRLand, All Rights Reserved</p>
+        </footer>
+    </body>
 </html>
