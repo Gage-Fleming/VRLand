@@ -78,6 +78,10 @@ header, footer{
     align-items: center;
 }
 
+header {
+    position: fixed;
+}
+
 footer {
     flex-direction: column;
     justify-content: space-between;
@@ -94,6 +98,10 @@ nav ul, #social-li p {
     font-size: 2.5vw;
     font-weight: 400;
     color: #05C3F9 !important;
+}
+
+nav ul {
+    align-items: center;
 }
 
 /* Style the list inside the navbar */
@@ -196,7 +204,7 @@ nav ul li {
 
 /* || Header section */
 #header-left{
-    width: 150px;
+    width: 100px;
 }
 
 #header-left object{
@@ -357,6 +365,7 @@ nav ul li {
 }
 
 #lp-gift-shop {
+    background-color: white;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -488,6 +497,9 @@ nav ul li {
     object-fit: cover;
 }
 
+#seasons-pass-ticket {
+    background-color: white;
+}
 #seasons-pass-ticket h2 {
     color: #05C3F9;
 }
