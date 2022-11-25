@@ -73,14 +73,15 @@
         <!-- Create ending section of landing page. Holds a flex box container with information 
             on the Hyrule attraction and VRGift shop-->
         <section id="lp-ending" class="two-column">
+            <!-- Hyrule attraction -->
             <section id="lp-attraction-highlight">
                 <h3>Visit Hyrule in a one of a kind adventure</h3>
                 <div class="two-column">
                     <img src="./images/hyrule-castle.jpg" width="100%" alt="">
-                    <div id="lp-attraction-right" class="two-column">
+                    <div id="lp-attraction-right">
 						<div id="hyrule-icons" class="two-columns">
-							<object data="./icons/sword-icon.svg" width="100" id="sword"></object>
-							<object data="./icons/heart-icon.svg" width="100" id="shield"></object>
+							<object data="./icons/sword-icon.svg" id="sword"></object>
+							<object data="./icons/heart-icon.svg" id="shield"></object>
 						</div>
                         <p>Protect Hyrule Castle from the reincarnation of Calamity Ganon in the
                             all-new mixed-reality coaster. Then enjoy some recipe staples
@@ -98,37 +99,39 @@
         </section>
     </main>
 
-    <!-- footer section here  -->
-    <footer class="two-column">
+    
+    <footer>
         <!--Create mailing list form-->
-		<div class="two-column">
-			<section class="mail-form">
-				<h4>Join our mailing list</h4>
-				<form action="#" method="post">
-					<ul>
-						<li>
-							<input type="email" id="mail" name="user_email" placeholder="Enter your email address">
-						</li>
-						<li class="button">
-							<button type="submit">ENTER</button>
-						</li>
-					</ul>
-				</form>
-			</section>
+        <div id="footer-top">
+            <section class="mail-form">
+                <h4>Join our mailing list</h4>
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <input type="email" id="mail" name="user_email" placeholder="Enter your email address">
+                        </li>
+                        <li>
+                            <button type="submit" class="button-link blue-white-link">ENTER</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
 
-			<!--Create footer nav bar with links to social media-->
-			<nav>
-				<ul>
-					<li><a href="#">Tickets</a></li>
-					<li><a href="#">Attractions</a></li>
-					<li>
-						<p>Follow us</p>
-						<a href="https://www.instagram.com"><img src="./icons/instagram.svg" width="50"></a>
-						<a href="https://twitter.com"><img src="./icons/twitter.svg" width="50"></a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+            <!--Create footer nav bar with links to social media-->
+            <nav>
+                <ul>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Attractions</a></li>
+                    <li id="social-li">
+                        <p>Follow us</p>
+                        <div id="social-container">
+                            <a href="https://www.instagram.com"><object data="./icons/instagram.svg"></object></a>
+                            <a href="https://twitter.com"><object data="./icons/twitter.svg"></object></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 		<!--Create copyright notice-->
 		<p>© VRLand, All Rights Reserved</p>

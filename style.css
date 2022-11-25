@@ -37,6 +37,12 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    text-align: center;
+}
+
 p {
     font-size: 1.5vw;
     text-align: center;
@@ -46,6 +52,10 @@ img {
     border-radius: 25px;
     width: 100%;
     height: auto;
+}
+
+object {
+    pointer-events: none;
 }
 
 /* Style header element turning it into a flex object. Also adjust the padding and sizing. || Header */
@@ -60,8 +70,15 @@ header, footer{
     align-items: center;
 }
 
+footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+
 /* Set default styles for all nav tags. Make them a flex item and remove any default list styling  || nav */
-nav ul {
+nav ul, #social-li p {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -110,14 +127,14 @@ nav ul li {
     padding: 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .two-column > * {
     width: 50%;
     height: 100%;
+    min-height: 100%;
     padding: 50px 40px;
-    flex: auto;
 }
 
 #header-left{
@@ -193,13 +210,20 @@ nav ul li {
 
 #lp-attraction-highlight {
     background-color: #05C3F9;
+    height: auto !important;
+    margin: 0px;
+    min-height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#lp-attraction-highlight > h3 {
+#lp-attraction-highlight h3 {
     margin-bottom: 50px;
 }
 
-#lp-attraction-highlight > .two-column img {
+#lp-attraction-highlight .two-column img {
     padding: 0px;
 }
 
@@ -209,8 +233,10 @@ nav ul li {
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 #lp-attraction-right > * {
@@ -219,9 +245,19 @@ nav ul li {
 }
 
 #lp-attraction-right p {
-    margin-top: 75px;
+    margin-top: 10px;
     text-align: left;
     color: white;
+}
+
+#hyrule-icons {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+}
+
+#hyrule-icons > *{
+    width: 50%;
 }
 
 #sword {
@@ -251,3 +287,60 @@ nav ul li {
 
 /* || Footer section  */
 
+#footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-top nav ul{
+    margin-left: auto;
+    align-items: flex-start !important;
+}
+
+.mail-form {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.mail-form input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.mail-form button {
+    margin-left: 20px;
+    height: 100%;
+    padding: 5% 20%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+#social-container {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-container a {
+    width: 30%;
+    height: auto;
+}
+
+#social-container object{
+    width: 100%;
+    max-height: 100%;
+}
