@@ -294,15 +294,19 @@ nav ul li {
 }
 
 #footer-top nav ul{
-    margin-left: auto;
     align-items: flex-start !important;
+    justify-content: flex-end !important;
+}
+
+#social-li {
+    margin-right: 0px;
 }
 
 .mail-form {
     width: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .mail-form ul {
