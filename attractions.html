@@ -40,41 +40,41 @@
             <!-- Attraction introduction to contain a section on the many unique offerings VRLand contains  -->
             <section id="att-introduction">
                 <h2>Explore 50+ unique worlds!</h2>
-                <p>
-                    With over 50+ unique attractions, we could not forgive ourselves for showing you 
+                <p>With over 50+ unique attractions, we could not forgive ourselves for showing you 
                     all we have to offer online. However, we know the below will get you to the doors 
-                    for a fabulous family stay!
-                </p>
+                    for a fabulous family stay!</p>
             </section>
 
             <!-- Style Hyrule attraction section. Including a image of a castle, and some information about the attraction -->
-            <section id="hyrule" class="attraction">
+            <section id="hyrule-attraction" class="attraction">
                 <h3>Explore Hyrule</h3>
-                <div id="hyrule-image-container">
-                    <img src="./images/hyrule-castle.jpg" width="100%" alt="" id="hyrule-image">
-                </div>
+                <img src="./images/hyrule-castle.jpg" class="attractions-main-image" alt="A bridge leading up to a castle, covered in smog">
                 <p>Hyrule is a world with extensive lore and experiences to be had. You’ve always viewed this 
                     world through a screen. No you can experience the world through VRLand! Fight alongside 
                     Link against Ganon and rescue the princess Zelda in our new attraction and theme-area.</p>
 
-                <div id="hyrule-info">
-                    <img src="./images/hyrule-food.jpg" width="100%" alt="">
+                <div class="attraction-info">
+                    <img src="./images/hyrule-food.jpg" alt="A warm meal with a salad, bread and dipping sauce">
                     <p>After a kingdom saving adventure, stop in at the Dueling Peaks Stable to 
                         revitalize yourself with some Zelda staples! Including:</p>
                 </div>
 
+                <!-- Create nested unordered list to store information on food dishes -->
                 <ul>
-                    <li><b>Hearty Fried Wild Greens</b>
+                    <li>
+                        <b>Hearty Fried Wild Greens</b>
                         <ul>
                             <li class="white-text">A basic vegetable dish made by sauteing fresh wild plants.</li>
                         </ul>
                     </li>
-                    <li><b>Enduring Elixir</b>
-                    <ul>
-                        <li class="white-text">Restore your stamina and recieve a single-use fast-pass ticket backto Hyrule!</li>
-                    </ul>
+                    <li>
+                        <b>Enduring Elixir</b>
+                        <ul>
+                            <li class="white-text">Restore your stamina and receive a single-use fast-pass ticket backto Hyrule!</li>
+                        </ul>
                     </li>
-                    <li><b>Mighty Simmered Fruit</b>
+                    <li>
+                        <b>Mighty Simmered Fruit</b>
                         <ul>
                             <li class="white-text">This sweet dish is made by heaping tasty fruits into a pan and simmering until tender</li>
                         </ul> 
@@ -82,53 +82,58 @@
                 </ul>
             </section>
 
-            <!-- another attraction section  -->
-                <div class="anotherAttraction">
-                    <img src="https://via.placeholder.com/800x300" width="100%" alt="">
-                    <br> <br>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod facere nam natus esse est ex, earum suscipit libero sequi itaque
-                        vitae totam quidem. Perspiciatis voluptatibus neque qui id doloremque?</p>
+            <!-- Create worlds history section to display our history portion of the theme park  -->
+                <section class="attraction" id="history-attraction">
+                    <h3>Explore our worlds history!</h3>
+                    <img src="./images/colossal-reality-coaster.jpg" class="attractions-main-image" 
+                    alt="A large rollercoaster in action with people enjoying the ride">
+                    <p>Earth has been something you have experience all your life. However, the stories it 
+                        has seen and the experiences that have been shared are locked away in our history textbooks. 
+                        Now you can experience some of the worlds defining moments at VRLand. Our colossal-Reality 
+                        coaster brings you on a fast paced adventure through time!</p>
                 
-                    <div class="imageSec">
-                        <div class="leftImage">
-                            <img src="https://via.placeholder.com/600x300" width="100%" alt="">
-                        </div>
-                        <div class="rightTxt">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo exercitationem nihil, magnam mollitia hic commodi aliquid quibusdam fugiat placeat! Veniam minus unde eaque, quos porro enim aliquam officiis est
-                            excepturi consequuntur itaque in dolores debitis provident ducimus sed deserunt mollitia.
-                        </div>
+                    <div class="attraction-info">
+                        <img src="./images/history-image.jpg" alt="Abraham Lincoln's portrait">
+                        <p class="white-text">While you navigate this portion of our park, many of our worlds greatest historical 
+                            figures will guide you along your journey. Lincoln, Ghandi, and many more await your arrival!</p>
                     </div>
-                </div>
-            <!-- another attraction section  -->
+                </section>
 
             <!-- session section here  -->
-            <div class="session">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vel iste quo aut quia recusandae natus facere molestias omnis ipsam? Excepturi, accusantium. Dolor asperiores numquam, nulla atque dolorum unde? Modi.</p>
-                <div class="sessionInner">
-                    <div class="left">
-                        <img src="https://via.placeholder.com/400x400" width="100%" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor error a, veniam numquam quaerat obcaecati nulla harum, officiis, explicabo cumque aut voluptas repellat facere!</p>
+            <section class="attraction" id="seasons">
+                <h3>Seasons Greetings</h3>
+                <p>Throughout the year a portion of our park will be cut off to explore seasons traditions. 
+                    Enjoy a ride with Santa, or an easter egg extravaganza with the Easter Bunny! All four seasons will get 
+                    a fantastic unique world to explore!</p>
+
+                <div class="two-column seasons-collection">
+                    <div id="spring" class="season">
+                        <img src="./images/easter.jpg" alt="">
+                        <p>Throughout Spring, you can enjoy Easter, Sham el Nessim, Songkran and Holi in unique VRLand experiences</p>
                     </div>
-                    <div class="right">
-                            <img src="https://via.placeholder.com/400x400" width="100%" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor error a, veniam numquam quaerat obcaecati nulla harum, officiis, explicabo cumque aut voluptas repellat facere!</p>
-                    </div>
-                </div>
-                <div class="sessionInner">
-                    <div class="left">
-                        <img src="https://via.placeholder.com/400x400" width="100%" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor error a, veniam numquam quaerat obcaecati nulla harum, officiis, explicabo cumque aut voluptas repellat facere!</p>
-                    </div>
-                    <div class="right">
-                            <img src="https://via.placeholder.com/400x400" width="100%" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor error a, veniam numquam quaerat obcaecati nulla harum, officiis, explicabo cumque aut voluptas repellat facere!</p>
+                    <div id="summer" class="season">
+                        <img src="./images/midsummer.jpg" alt="">
+                        <p>During Summer you can experience, midsummer, Aomori Nebuta Matsuri and Puck Fair. 
+                            All of these will be outdoor VR experiences!</p>
                     </div>
                 </div>
-            </div>
+
+                <div class="two-column seasons-collection">
+                    <div id="fall" class="season">
+                        <img src="./images/halloween.jpg" alt="">
+                        <p>Enjoy the fall season with hand-crafted Halloween, Bonfire Night, Chuseok, and Dia 
+                            De Los Muertos VRLand experiences.</p>
+                    </div>
+                    <div id="winter" class="season">
+                        <img src="./images/christmas.jpg" alt="">
+                        <p>Finally, when you want to stay warm during winter you can 
+                            experience some wonderful VRLand experiences pertaining to: Christmas, 
+                            Hanukkah Kwanzaa and Three Kings Day.</p>
+                    </div>
+                </div>
+            </section>
         </main>
-        <!-- session section here  -->
+
         <footer>
             <!--Create mailing list form-->
             <div id="footer-top">

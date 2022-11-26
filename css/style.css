@@ -202,6 +202,10 @@ nav ul li {
     padding: 50px 40px;
 }
 
+.white-text {
+    color: white !important;
+}
+
 /* || Header section */
 #header-left{
     width: 100px;
@@ -530,8 +534,7 @@ nav ul li {
     background-color: black;
 }
 
-/* Attractions Page || Hyrule Section */
-
+/* Attractions Page || Classes */
 .attraction > *{
     margin: 30px 0px;
 }
@@ -544,36 +547,38 @@ nav ul li {
     border-radius: 25px !important;
 }
 
-#hyrule {
-    background-color: #05C3F9;
-}
-
-#hyrule p {
-    color: white;
-}
-
-#hyrule-image {
-    height: 400px;
+.attractions-main-image {
+    height: 600px;
     object-fit: cover;
 }
 
-#hyrule-info {
+.attraction-info {
     display: flex;
     height: 300px;
 }
 
-#hyrule-info > *{
+.attraction-info > *{
     width: 50%;
     object-fit: cover;
 }
 
-#hyrule-info p{
+.attraction-info p{
     color: black;
     text-align: left;
     margin-left: 50px;
 }
 
-#hyrule ul {
+/* Attractions Page || Hyrule Section */
+
+#hyrule-attraction {
+    background-color: #05C3F9;
+}
+
+#hyrule-attraction p {
+    color: white;
+}
+
+#hyrule-attraction ul {
     font-size: 2vw;
     margin-left: 30px;
 }
@@ -581,4 +586,40 @@ nav ul li {
 .white-text {
     color: white;
     padding-left: 20px;
+}
+
+/* Attractions Page || History Section */
+
+#history-attraction {
+    background-color: black;
+    color: white;
+}
+
+#history-attraction {
+    background-color: black;
+    color: white;
+}
+
+#history-attraction img + p{
+    color: #05C3F9;
+}
+
+/* Attractions Page || Season Section */
+
+#seasons h3 {
+    color: #05C3F9;
+}
+
+.season {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#seasons-collection > * {
+    padding: 0px !important;
+}
+
+.season img {
+    height: 800px !important;
+    object-fit: cover;
 }
