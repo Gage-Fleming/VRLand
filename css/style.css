@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
 }
 
 main > * {
@@ -512,4 +512,14 @@ nav ul li {
 
 #att-large-image {
     background-image: url(../images/things-to-do-main-image.jpg);
+}
+
+#att-introduction {
+    color: white;
+    background-color: black;
+}
+
+#att-introduction p {
+    margin-top: 30px;
+    font-size: 2vw;
 }
