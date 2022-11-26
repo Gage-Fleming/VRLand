@@ -510,16 +510,75 @@ nav ul li {
 
 /* || Attractions Page */
 
+#attractions-page h3, #attractions-page h2{
+    font-size: 4vw;
+}
+
 #att-large-image {
     background-image: url(../images/things-to-do-main-image.jpg);
 }
+
+#attractions-page p {
+    margin-top: 30px;
+    font-size: 2vw;
+}
+
+/* Attractions Page || Introduction section */
 
 #att-introduction {
     color: white;
     background-color: black;
 }
 
-#att-introduction p {
-    margin-top: 30px;
+/* Attractions Page || Hyrule Section */
+
+.attraction > *{
+    margin: 30px 0px;
+}
+
+.attraction h3 {
+    margin-top: 0px;
+}
+
+.attraction div img {
+    border-radius: 25px !important;
+}
+
+#hyrule {
+    background-color: #05C3F9;
+}
+
+#hyrule p {
+    color: white;
+}
+
+#hyrule-image {
+    height: 400px;
+    object-fit: cover;
+}
+
+#hyrule-info {
+    display: flex;
+    height: 300px;
+}
+
+#hyrule-info > *{
+    width: 50%;
+    object-fit: cover;
+}
+
+#hyrule-info p{
+    color: black;
+    text-align: left;
+    margin-left: 50px;
+}
+
+#hyrule ul {
     font-size: 2vw;
+    margin-left: 30px;
+}
+
+.white-text {
+    color: white;
+    padding-left: 20px;
 }
