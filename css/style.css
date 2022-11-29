@@ -562,10 +562,12 @@ nav ul li {
 .attraction-info {
     display: flex;
     height: 300px;
+    align-items: center;
 }
 
 .attraction-info > *{
     width: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -573,6 +575,7 @@ nav ul li {
     color: black;
     text-align: left;
     margin-left: 50px;
+    padding: 0px
 }
 
 /* Attractions Page || Hyrule Section */
@@ -626,8 +629,8 @@ nav ul li {
     padding-bottom: 0px;
 }
 
-#seasons-collection > * {
-    padding: 0px !important;
+.seasons-collection > * {
+    padding: 0px 20px;
 }
 
 .season img {
