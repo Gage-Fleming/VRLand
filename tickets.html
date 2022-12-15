@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <!-- Create header section to house, logo, nav bar and hamburger menu -->
+        <!-- Create header section to house, logo, and nav bar -->
         <header>
             <!-- Add logo to left side of header -->
             <div class="header-left">
@@ -46,10 +46,10 @@
                     <div class="ticket-top-logo">
                         <object data="./icons/ticket-icon.svg" type="image/svg+xml" width="300">Tickets icon</object>
                     </div><!-- .ticket-top-logo -->
-                    <section class="ticket-top-info">
+                    <div class="ticket-top-info">
                         <h2>Day Pass Tickets</h2>
                         <p>Come see what we're all about with a day pass ticket. Enjoy VRLand for a full family-fun packed day.</p>
-                    </section>
+                    </div>
                 </div><!-- .ticket-top -->
                 <hr>
                 <ul>
@@ -64,19 +64,19 @@
                 <div class="ticket-top">
                     <div class="ticket-top-logo">
                         <object data="./icons/fast-track-ticket-icon.svg" type="image/svg+xml" width="300">Fast-Track Tickets icon</object>
-                    </div>
-                    <section class="ticket-top-info">
+                    </div><!-- .ticket-top-logo -->
+                    <div class="ticket-top-info">
                         <h2>Fast Track Tickets</h2>
                         <p>Tired of waiting in our super long lines? Skip the lines for the day with fast track tickets.</p>
-                    </section>
-                </div>
+                    </div><!-- .ticket-top-info -->
+                </div><!-- .ticket-top -->
                 <hr>
                 <ul>
                     <li><p>Kids (Age 5-12) $36 + GST</p><a href="#" class="black-blue-link button-link">BUY</a></li>
                     <li><p>Teens (Age 13-18) $67 + GST</p><a href="#" class="black-blue-link button-link">BUY</a></li>
                     <li><p>Adults $132 + GST</p><a href="#" class="black-blue-link button-link">BUY</a></li>
                 </ul>
-            </div>
+            </div><!-- #fast-track-ticket -->
         </div>
 
         <!-- Youth camp tickets section. Holds a cta over a large cover image-->
@@ -85,50 +85,49 @@
                 <div class="ticket-top">
                     <div class="ticket-top-logo">
                         <object data="./icons/kid-icon.svg" type="image/svg+xml" width="300">Youth camp icon</object>
-                    </div>
+                    </div><!-- .ticket-top-logo -->
                     <div class="ticket-top-info">
                         <h2>Youth-Camp Tickets</h2>
                         <p>Help your child unlock new skills with our youth VR boot-camp. 
                             They will learn the ins and outs of VR and have a smile all the way home.</p>
-                    </div>
-                </div>
+                        </div><!-- .ticket-top-info -->
+                </div><!-- .ticket-top -->
                 <hr>
                 <ul>
                     <li><p>Kids (Age 5-12) $78 + GST</p><a href="#" class="white-black-link button-link">BUY</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- #youth-camp-ticket -->
+        </div><!-- #youth-camp-image -->
 
 
         <!-- ticket purchase section two  -->
-        <div class="two-column">
+        <div class="two-column" id="seasons-pass-info">
             <div id="seasons-pass-left">
                 <img src="./images/seasons-pass.jpg" alt="A theme park ride in use at night">
-            </div>
+            </div><!-- #seasons-pass-left -->
             <!-- Seasons pass ticket section -->
             <div class="ticket" id="seasons-pass-ticket">
                 <div class="ticket-top">
                     <div class="ticket-top-logo">
                         <object data="./icons/seasons-pass.svg" type="image/svg+xml" width="300">Seasons Pass tickets icon</object>
-                    </div>
-                    <section class="ticket-top-info">
+                    </div><!-- .ticket-top-logo -->
+                    <div class="ticket-top-info">
                         <h2>Seasons Pass</h2>
                         <p>The best value for your hard earned dollars. Enjoy VRLand any day of the year with a seasons pass.</p>
-                    </section>
-                </div>
+                    </div><!-- .ticket-top-info -->
+                </div><!-- .ticket-top -->
                 <hr>
                 <ul>
                     <li><p>Kids (Age 5-12) $545 + GST</p><a href="#" class="blue-black-link button-link">BUY</a></li>
                     <li><p>Teens (Age 13-18) $999 + GST</p><a href="#" class="blue-black-link button-link">BUY</a></li>
                     <li><p>Adults $1129 + GST</p><a href="#" class="blue-black-link button-link">BUY</a></li>
                 </ul>
-            </div>
-        </div>
-        <!-- ticket purchase section two  -->
+            </div><!-- #seasons-pass-ticket -->
+        </div><!-- #seasons-pass-info -->    
 
-
+        <!-- Footer section to house a mail form, nav bar and social media links -->
         <footer>
-            <!--Create mailing list form-->
+            <!-- Create mailing list form -->
             <div id="footer-top">
                 <section class="mail-form">
                     <h4>Join our mailing list</h4>
@@ -142,7 +141,7 @@
                             </li>
                         </ul>
                     </form>
-                </section>
+                </section><!-- .mail-form -->
 
                 <!--Create footer nav bar with links to social media-->
                 <nav>
@@ -158,9 +157,9 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div><!-- #footer-top -->
 
-            <!--Create copyright notice-->
+            <!-- Create copyright notice -->
             <p>© VRLand, All Rights Reserved</p>
         </footer>
     </body>
