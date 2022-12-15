@@ -1,9 +1,37 @@
+/* 
+Comments are separated into the below categories for easy traversal
+
+General Styles (For general tag styles)
+    Header and Footer (For all styles on these two tags)
+        Class and ID's (For all styles relating to children classes and id's in header and footer)
+    nav (For all styles relating to nav tags)
+
+General Classes (Class styles that are used generally across the site)
+
+Landing Page (Styles that directly affect index.html)
+    Introduction Section (Styles related to the intro of index.html)
+    Ending section (Styles pertaining to the ending of index.html)
+
+Tickets Page (Styles that directly affect tickets.html)
+    Tickets Section (Styles for the tickets section of tickets.html)
+    Youth Camp Section (Styles for the youth camp section of tickets.html)
+    Seasons Pass (Styles pertaining to the seasons pass on tickets.html)
+
+Attractions Page (Styles pertaining to attractions.html)
+    Introduction Section (Styles related to the intro of attractions.html)
+    Classes (Styles related to overriding general class styles for attractions.html)
+    Hyrule Section (Styles related to the Hyrule portion of attraction.html)
+    History Section (Styles related to the History portion of attraction.html)
+    Season Section (Styles related to the Season portion of attraction.html)
+*/
+
 /* Import google font Poppins and Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-/* Override web browser default styles  || General styles */
+/* General Styles */
+/* Override web browser default styles */
 * {
     font-family: 'Roboto', 'Poppins', helvetica, sans-serif;
     margin: 0;
@@ -66,7 +94,8 @@ hr {
     margin: 10px 0px;
 }
 
-/* Style header element turning it into a flex object. Also adjust the padding and sizing. || Header */
+/* General Styles || Header and Footer */
+/* Style header and footer element turning it into a flex object. Also adjust the padding and sizing */
 header, footer{
     height: auto;
     width: 100%;
@@ -89,124 +118,9 @@ footer {
     padding-bottom: 10px;
 }
 
-/* Set default styles for all nav tags. Make them a flex item and remove any default list styling  || nav */
-nav ul, #social-li p {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    font-size: 2.5vw;
-    font-weight: 400;
-    color: #05C3F9 !important;
-}
+/* General Styles || Header and Footer || Classes and ID's */
 
-nav ul {
-    align-items: center;
-}
-
-/* Style the list inside the navbar */
-nav ul li {
-    margin: 0px 40px;
-    color: #05C3F9;
-}
-
-
-/* || General classes */
-
-/* Style large-image class to contain main image piece on each page*/
-.large-image {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Style the main call to action/catchphrase that is laid out over introduction image */
-.main-ctoa {
-    height: auto;
-    width: 50%;
-    padding: 30px 60px;
-    background-color: #05c4f99c;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-ctoa p {
-    font-size: 2vw;
-    font-weight: 600;
-    padding: 20px 0;
-}
-
-/* Add styling to pages not index.html to change font colour to white and spread blue background further */
-.secondary-ctoa {
-    color: white;
-    width: 75%;
-    padding: 60px;
-}
-
-/* Add styling to links to mimic a button */
-.button-link {
-    height: auto;
-    width: fit-content;
-    padding: 15px 40px;
-    font-size: 2vw;
-    font-weight: 500;
-    border-radius: 12px;
-    cursor: pointer;
-    border: none;
-}
-
-/* This is to style links that mimic buttons with a black background and blue text */
-.black-blue-link {
-    color: #05C3F9 !important;
-    background-color: #000;
-}
-
-.blue-white-link {
-    color: white !important;
-    background-color: #05C3F9;
-}
-
-.white-black-link {
-    color: black !important;
-    background-color: white;
-}
-
-.blue-black-link {
-    color: black !important;
-    background-color: #05C3F9;
-}
-
-/* Style class to allow for easy two-column layout */
-.two-column {
-    height: auto;
-    width: 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-}
-
-.two-column > * {
-    width: 50%;
-    height: 100%;
-    min-height: 100%;
-    padding: 50px 40px;
-}
-
-.white-text {
-    color: white !important;
-}
-
-/* || Header section */
+/* Header general classes */
 .header-left {
     width: 100px;
     height: auto;
@@ -223,8 +137,7 @@ nav ul li {
     width: 100%;
 }
 
-/* || Footer section  */
-
+/* Footer general Id's */
 #footer-top {
     display: flex;
     justify-content: space-between;
@@ -235,10 +148,7 @@ nav ul li {
     justify-content: flex-end !important;
 }
 
-#social-li {
-    margin-right: 0px;
-}
-
+/* Mail form styles */ 
 .mail-form {
     width: 33%;
     display: flex;
@@ -270,6 +180,8 @@ nav ul li {
     border-radius: 6px;
 }
 
+/* Social media links styles */
+
 #social-container {
     padding: 0px;
     width: 100%;
@@ -287,7 +199,131 @@ nav ul li {
     max-height: 100%;
 }
 
-/* || Landing Page */
+#social-li {
+    margin-right: 0px;
+}
+
+/* General Styles || Nav */
+
+/* Set default styles for all nav tags. Make them a flex item and remove any default list styling*/
+nav ul, #social-li p {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: #05C3F9 !important;
+}
+
+nav ul {
+    align-items: center;
+}
+
+/* Style the list inside the navbar */
+nav ul li {
+    margin: 0px 40px;
+    color: #05C3F9;
+}
+
+/* General classes */
+/* Style large-image class to contain main image piece on each page */
+.large-image {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the main call to action/catchphrase that is laid out over introduction image */
+.main-ctoa {
+    height: auto;
+    width: 50%;
+    padding: 30px 60px;
+    background-color: #05c4f99c;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-ctoa p {
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+/* Add styling to pages that are not index.html to change font colour to white and spread blue background further for main catchphrase */
+.secondary-ctoa {
+    color: white;
+    width: 75%;
+    padding: 60px;
+}
+
+/* Add styling to links to mimic a button */
+.button-link {
+    height: auto;
+    width: fit-content;
+    padding: 15px 40px;
+    font-size: 2vw;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+/* This is to style links that mimic buttons with a black background and blue text */
+.black-blue-link {
+    color: #05C3F9 !important;
+    background-color: #000;
+}
+
+/* This is to style links that mimic buttons with a blue background and white text */
+.blue-white-link {
+    color: white !important;
+    background-color: #05C3F9;
+}
+
+/* This is to style links that mimic buttons with a white background and black text */
+.white-black-link {
+    color: black !important;
+    background-color: white;
+}
+
+/* This is to style links that mimic buttons with a blue background and black text */
+.blue-black-link {
+    color: black !important;
+    background-color: #05C3F9;
+}
+
+/* Style class to allow for easy two-column layout */
+.two-column {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.two-column > * {
+    width: 50%;
+    height: 100%;
+    min-height: 100%;
+    padding: 50px 40px;
+}
+
+.white-text {
+    color: white !important;
+}
+
+/* Landing Page */
 
 #lp-large-image {
     background-image: url(../images/colossal-reality-coaster.jpg);
@@ -398,7 +434,7 @@ nav ul li {
     object-fit: cover;
 }
 
-/* || Tickets Page */
+/* Tickets Page */
 #tic-large-image {
     background-image: url(../images/ticket-booth.jpg);
 }
@@ -493,7 +529,7 @@ nav ul li {
     color: white;
 }
 
-/* Seasons pass section */
+/* Tickets Page || Seasons Pass */
 
 #seasons-pass-left {
     padding: 0px;
