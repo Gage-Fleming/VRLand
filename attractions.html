@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <!-- Create header section to house, logo, nav bar and hamburger menu -->
+        <!-- Create header section to house, logo, and nav bar -->
         <header>
             <!-- Add logo to left side of header -->
             <div class="header-left">
@@ -35,8 +35,8 @@
             <div class="large-image" id="att-large-image">
                 <div class="main-ctoa secondary-ctoa">
                     <h1>Find Your Reason to Escape</h1>
-                </div>
-            </div>
+                </div><!-- .main-ctoa -->
+            </div><!-- #att-large-image -->
 
             <!-- Attraction introduction to contain a section on the many unique offerings VRLand contains  -->
             <section id="att-introduction">
@@ -44,7 +44,7 @@
                 <p>With over 50+ unique attractions, we could not forgive ourselves for showing you 
                     all we have to offer online. However, we know the below will get you to the doors 
                     for a fabulous family stay!</p>
-            </section>
+            </section><!-- #att-introduction -->
 
             <!-- Style Hyrule attraction section. Including a image of a castle, and some information about the attraction -->
             <section id="hyrule-attraction" class="attraction">
@@ -60,7 +60,7 @@
                         Don't go hungry, be sure to stop in at the Dueling Peaks Stable to 
                         revitalize yourself with some Zelda staples! You spent time collecting the food in the ride.
                         Now reap your rewards! Some of the staples include:</p>
-                </div>
+                </div><!-- .attraction-info -->
 
                 <!-- Create nested unordered list to store information on food dishes -->
                 <ul>
@@ -83,7 +83,7 @@
                         </ul> 
                     </li>
                 </ul>
-            </section>
+            </section><!-- #hyrule-attraction -->
 
             <!-- Create worlds history section to display our history portion of the theme park  -->
                 <section class="attraction" id="history-attraction">
@@ -102,46 +102,48 @@
                             figures will guide you along your journey. Lincoln, Ghandi, and many more await your arrival!
                             Be sure to say hello and the mixed reality ai will be able to converse just as our understanding of these figures would.
                         </p>
-                    </div>
-                </section>
+                    </div><!-- .attraction-info -->
+                </section><!-- #history-attraction -->
 
-            <!-- session section here  -->
+            <!-- Create seasons section to house information about the seasonal offers VRLand has -->
             <section class="attraction" id="seasons">
                 <h3>Seasons Greetings</h3>
                 <p>Throughout the year a portion of our park will be cut off to explore seasons traditions. 
                     Enjoy a ride with Santa, or an easter egg extravaganza with the Easter Bunny! All four seasons will get 
                     a fantastic unique world to explore!</p>
 
+                <!-- Spring and summer seasons to be contained here --> 
                 <div class="two-column seasons-collection">
                     <div id="spring" class="season">
                         <img src="./images/easter.jpg" alt="">
                         <p>Throughout Spring, you can enjoy Easter, Sham el Nessim, Songkran and Holi in unique VRLand experiences.</p>
-                    </div>
+                    </div><!-- #spring -->
                     <div id="summer" class="season">
                         <img src="./images/midsummer.jpg" alt="">
                         <p>During Summer you can experience, midsummer, Aomori Nebuta Matsuri and Puck Fair. 
                             All of these will be outdoor VR experiences!</p>
-                    </div>
-                </div>
+                    </div><!-- #summer -->
+                </div><!-- .seasons-collection -->
 
                 <div class="two-column seasons-collection">
                     <div id="fall" class="season">
                         <img src="./images/halloween.jpg" alt="">
                         <p>Enjoy the fall season with hand-crafted Halloween, Bonfire Night, Chuseok, and Dia 
                             De Los Muertos VRLand experiences.</p>
-                    </div>
+                    </div><!-- #fall -->
                     <div id="winter" class="season">
                         <img src="./images/christmas.jpg" alt="">
                         <p>Finally, when you want to stay warm during winter you can 
                             experience some wonderful VRLand experiences pertaining to: Christmas, 
                             Hanukkah Kwanzaa and Three Kings Day.</p>
-                    </div>
-                </div>
-            </section>
+                    </div><!-- #winter -->
+                </div><!-- .seasons-collection -->
+            </section><!-- #seasons -->
         </main>
 
+        <!-- Footer section to house a mail form, nav bar and social media links -->
         <footer>
-            <!--Create mailing list form-->
+            <!-- Create mailing list form -->
             <div id="footer-top">
                 <section class="mail-form">
                     <h4>Join our mailing list</h4>
@@ -155,9 +157,9 @@
                             </li>
                         </ul>
                     </form>
-                </section>
+                </section><!-- .mail-form -->
 
-                <!--Create footer nav bar with links to social media-->
+                <!-- Create footer nav bar with links to social media -->
                 <nav>
                     <ul>
                         <li><a href="./tickets.html">Tickets</a></li>
@@ -171,9 +173,9 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div><!-- #footer-top -->
 
-            <!--Create copyright notice-->
+            <!-- Create copyright notice -->
             <p>© VRLand, All Rights Reserved</p>
         </footer>
     </body>
