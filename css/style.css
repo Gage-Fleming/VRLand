@@ -227,6 +227,10 @@ nav ul li {
     color: #05C3F9;
 }
 
+nav a:hover {
+    color: white !important;
+}
+
 /* General classes */
 /* Style large-image class to contain main image piece on each page */
 .large-image {
