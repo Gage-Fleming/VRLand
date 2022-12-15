@@ -47,6 +47,7 @@ main > * {
     padding: 50px 40px;
 }
 
+/* Adjust all anchor tags to remain default styles */
 a, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;
@@ -284,9 +285,19 @@ nav ul li {
     background-color: #000;
 }
 
+.black-blue-link:hover {
+    color: white !important;
+    background-color: #000;
+}
+
 /* This is to style links that mimic buttons with a blue background and white text */
 .blue-white-link {
     color: white !important;
+    background-color: #05C3F9;
+}
+
+.blue-white-link:hover {
+    color: black !important;
     background-color: #05C3F9;
 }
 
@@ -296,9 +307,19 @@ nav ul li {
     background-color: white;
 }
 
+.white-black-link:hover {
+    color: #05C3F9 !important;
+    background-color: white;
+}
+
 /* This is to style links that mimic buttons with a blue background and black text */
 .blue-black-link {
     color: black !important;
+    background-color: #05C3F9;
+}
+
+.blue-black-link:hover {
+    color: white !important;
     background-color: #05C3F9;
 }
 
