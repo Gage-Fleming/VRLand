@@ -291,7 +291,6 @@ nav a:hover {
 
 .black-blue-link:hover {
     color: white !important;
-    background-color: #000;
 }
 
 /* This is to style links that mimic buttons with a blue background and white text */
@@ -302,7 +301,6 @@ nav a:hover {
 
 .blue-white-link:hover {
     color: black !important;
-    background-color: #05C3F9;
 }
 
 /* This is to style links that mimic buttons with a white background and black text */
@@ -313,7 +311,6 @@ nav a:hover {
 
 .white-black-link:hover {
     color: #05C3F9 !important;
-    background-color: white;
 }
 
 /* This is to style links that mimic buttons with a blue background and black text */
@@ -324,7 +321,6 @@ nav a:hover {
 
 .blue-black-link:hover {
     color: white !important;
-    background-color: #05C3F9;
 }
 
 /* Style class to allow for easy two-column layout */
@@ -633,13 +629,19 @@ nav a:hover {
 .attraction-info > *{
     width: 50%;
     height: 100%;
+}
+
+.attraction-info > img{
     object-fit: cover;
 }
 
 .attraction-info p{
+    display: flex;
     color: black;
     text-align: left;
+    align-items: center;
     margin-left: 50px;
+    margin-top: 0px !important;
     padding: 0px
 }
 
