@@ -329,17 +329,17 @@ nav a:hover {
 
 /* Style class to allow for easy two-column layout */
 .two-column {
-    height: auto;
+    height: 100%;
     width: 100%;
     padding: 0px;
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
 }
 
 .two-column > * {
     width: 50%;
-    height: 100%;
+    height: auto !important;
     min-height: 100%;
     padding: 50px 40px;
 }
@@ -358,6 +358,7 @@ nav a:hover {
 .lp-introduction {
     background-color: black;
     color: white;
+    align-items: center;
 }
 
 #lp-introduction-left {
@@ -438,24 +439,27 @@ nav a:hover {
 
 #lp-gift-shop {
     background-color: white;
-    height: 100%;
+    height: 100% !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
 }
 
 #lp-gift-shop * {
-    margin: 15px 0px;
+    margin: 15px auto;
 }
 
 #lp-gift-shop h3 {
     color: #05C3F9;
+    padding: 0px;
+    width: 100%;
+    margin-top: 0px;
 }
 
 #toys-image {
     width: fill;
-    height: 300px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -565,7 +569,7 @@ nav a:hover {
 #seasons-pass-left img{
     all: initial;
     width: 100%;
-    height: 600px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -623,7 +627,7 @@ nav a:hover {
 .attraction-info {
     display: flex;
     height: 300px;
-    align-items: center;
+    align-items: center !important;
 }
 
 .attraction-info > *{
